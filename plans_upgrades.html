@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plans & Upgrades</title>
+    <link rel="stylesheet" href="plans_upgrades.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="plans_upgrades.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Plans & Upgrades</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="dasboard.html">Dashboard</a></li>
+            <li><a href="account_details.html">Account Details</a></li>
+            <li><a href="plans_upgrades.html" class="active">Plans & Upgrades</a></li>
+            <li><a href="usage.html">Usage</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Available Broadband Plans</h2>
+        <div class="plans-grid">
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <ul>
+                    <li>Speed: 10 Mbps</li>
+                    <li>Price: $20/month</li>
+                    <li>Data: 100 GB</li>
+                </ul>
+                <button class="compare-btn" data-plan="Basic Plan">Compare</button>
+                <button class="subscribe-btn" data-plan="Basic Plan">Subscribe</button>
+            </div>
+            <div class="plan">
+                <h3>Standard Plan</h3>
+                <ul>
+                    <li>Speed: 50 Mbps</li>
+                    <li>Price: $40/month</li>
+                    <li>Data: 500 GB</li>
+                </ul>
+                <button class="compare-btn" data-plan="Standard Plan">Compare</button>
+                <button class="subscribe-btn" data-plan="Standard Plan">Subscribe</button>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <ul>
+                    <li>Speed: 100 Mbps</li>
+                    <li>Price: $60/month</li>
+                    <li>Data: Unlimited</li>
+                </ul>
+                <button class="compare-btn" data-plan="Premium Plan">Compare</button>
+                <button class="subscribe-btn" data-plan="Premium Plan">Subscribe</button>
+            </div>
+            <!-- Add more plans as needed -->
+        </div>
+    </div>
+    <div class="compare-modal" id="compareModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Compare Plans</h2>
+            <div id="comparison"></div>
+        </div>
+    </div>
+</body>
+</html>

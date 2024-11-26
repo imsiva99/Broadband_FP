@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="support.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="support.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Support</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="home" class="active">Home</a></li>
+            <li><a href="dasboard.html" id="dashboard">Dashboard</a></li>
+            <li><a href="account_details.html" id="account-details">Account Details</a></li>
+            <li><a href="plans_upgrades.html" id="plans-upgrades">Plans & Upgrades</a></li>
+            <li><a href="usage.html" id="usage">Usage</a></li>
+            <li><a href="support.html" id="support">Support</a></li>
+            <li><a href="feedback.html" id="feedback">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <h3>How do I reset my password?</h3>
+                <p class="answer">To reset your password, go to the login page and click on "Forgot Password". Follow the instructions sent to your email.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I check my data usage?</h3>
+                <p class="answer">You can check your data usage in the Usage section of your Dashboard.</p>
+            </div>
+            <div class="faq">
+                <h3>How do I contact customer support?</h3>
+                <p class="answer">You can contact customer support via live chat or by submitting a ticket below.</p>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h2>Contact Support</h2>
+            <div class="live-chat">
+                <button id="liveChatButton">Start Live Chat</button>
+                <p id="liveChatStatus"></p>
+            </div>
+            <div class="ticket-submission">
+                <h3>Submit a Ticket</h3>
+                <form id="ticketForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="issue">Issue:</label>
+                    <textarea id="issue" name="issue" required></textarea>
+                    
+                    <button type="submit">Submit Ticket</button>
+                    <p id="formStatus"></p>
+                </form>
+            </div>
+        </div>
+        
+        <div class="troubleshooting-section">
+            <h2>Troubleshooting Guides</h2>
+            <ul>
+                <li><a href="#">How to reset your router</a></li>
+                <li><a href="#">Troubleshooting slow internet speeds</a></li>
+                <li><a href="#">How to set up your Wi-Fi</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

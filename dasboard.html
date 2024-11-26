@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="dasboard.html" class="active">Dashboard</a></li>
+            <li><a href="account_details.html">Account Details</a></li>
+            <li><a href="plans_upgrades.html">Plans & Upgrades</a></li>
+            <li><a href="usage.html">Usage</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Current Broadband Plan Details</h2>
+        <div id="plan-details">
+            <!-- Plan details will be dynamically loaded here -->
+        </div>
+
+        <h2>Usage Statistics</h2>
+        <div id="usage-statistics">
+            <!-- Usage statistics will be dynamically loaded here -->
+        </div>
+
+        <h2>Billing Information</h2>
+        <div id="billing-info">
+            <!-- Billing information will be dynamically loaded here -->
+        </div>
+    </div>
+</body>
+</html>
